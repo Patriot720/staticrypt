@@ -77,7 +77,7 @@ var data = {
     encrypted: encryptedMessage,
     crypto_tag: cryptoTag,
     embed: namedArgs.embed,
-    outputFilePath: namedArgs.output !== null ? namedArgs.output : input.replace(/\.html$/, '') + "_encrypted.html"
+    outputFilePath: namedArgs.output !== null ? namedArgs.output : input
 };
 
 genFile(data);
