@@ -62,7 +62,8 @@ var encryptedMessage = hmac + encrypted;
 var cryptoTag = SCRIPT_TAG;
 if (namedArgs.embed) {
     try {
-        var embedContents = FileSystem.readFileSync('crypto-js.min.js', 'utf8');
+        // TODO Fix
+        var embedContents = FileSystem.readFileSync('node_modules/staticrypt/crypto-js.min.js', 'utf8');
     } catch(e) {
         console.log("Failure: embed file does not exist!");
         process.exit(1);
